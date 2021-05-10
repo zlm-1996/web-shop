@@ -1,0 +1,894 @@
+@charset "utf-8";
+@import "./color.scss";
+$nav-bgcolor:$lightGray;
+$fontColor:$darkGray;
+$fontColor1:$orange;
+//大屏
+@media (min-width:992px){
+    .site-nav{
+        background-color: $nav-bgcolor;
+         height: 35px;
+        .z-nav{
+            ul{
+               margin-top: 4px;
+               li{
+                   height: 35px;
+                   margin: 0;
+                  color: $fontColor;
+                  font-size: 14px;
+                  text-align: center;
+                  margin-right: 6px;
+                  a{
+                      text-decoration: none;
+                      color: $fontColor;
+                  }
+                  a:hover{
+                      color: $fontColor1;
+                  }
+               }
+            }
+            .z-nav-first{
+                .nav-weixin{
+                    position: relative;
+                    .weixin{
+                        width: 100px;
+                        height: 100px;
+                        position: absolute;
+                        top: 40px;
+                       left: 0;
+                        img{
+                     width: 80px;
+                 }
+                 div{
+                     font-size: 12px;
+                 }
+             }
+                }
+                .nav-hualiwang{
+                    position: relative;
+                    .hualiwang{
+                        width: 100px;
+                        height: 100px;
+                        position: absolute;
+                        top: 40px;
+                       left: 0;
+                        img{
+                     width: 80px;
+                 }
+                 div{
+                     font-size: 12px;
+                 }
+             }
+                }
+               
+                
+            }
+            }
+         .z-nav-after{
+             margin-top: 10px;
+            li:nth-child(1){
+                 margin-left:30px;
+            }
+            .nav-server{
+             position: relative;
+             ol{
+                 position: relative;
+                 top: 0px;
+                 li{
+                     margin:0;
+                     font-size: 10px;
+                 }
+             }      
+                
+                }
+
+            }
+           
+        
+
+        }
+        .z-nav1{
+            margin-top:10px;
+           a{
+               color: $fontColor;
+           }
+            a:hover{
+              color: $fontColor1;
+           }
+           .z-nav-l{
+               h2{
+                   color: $fontColor1;
+               }
+           }
+           .z-nav-c{
+              .search{
+                 width: 253px;
+                  border: 1px solid $fontColor1;
+                  border-right: none;
+                  box-sizing: border-box;
+                  margin-right: 0;
+                 input{
+                     border:none
+                  
+                 }
+                     button{
+                         width: 65px;
+                         height: 30px;
+                         background-color: $fontColor1;
+                         color: #fff;
+                         border-style: none; 
+                         margin: 0;  
+                     }
+              }
+              ul{
+                  li{
+                      font-size: 14px;
+                      margin-right: 3px;
+                  }
+              }
+      
+           }
+           .z-nav-r{
+               ul{
+                   text-align: center;
+                   li{
+                       margin-right: 5px;
+                   }
+                   
+               }
+           }
+           
+       }
+    section{
+        .container{
+
+            .login-box{
+                position: absolute;
+                top:60px;
+                right: 220px;
+             width: 360px;
+             background-color: #fff;
+            border-radius: 5px;
+                ul {
+                    margin-left: 10px;
+                    display: block;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    padding-inline-start: 40px;
+                    text-align:  center;
+                    li{
+                        margin-right: 15px;
+                        margin-top: 10px;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: $fontColor1;
+                    }
+                }
+            #form1{
+                .tel-box{
+                    margin-top: 20px;
+                   margin-left: 10px;
+                   margin-right: 10px;
+                    height: 36px;
+                    .input-box{
+                    position: relative;
+                    width: 100%;
+                    height: 36px;
+                    border: 1px solid $nav-bgcolor;
+                    border-radius: 2px;
+                    input{
+                        width: 262px;
+                        height: 34px;
+                          padding: 7px 6px;
+                        vertical-align: top;
+                         font-size: 14px;
+                        line-height: 20px;
+                       color: #232628;
+                       outline: none;
+                       border: 0;
+                    }
+                
+                    }
+                }
+                .code-box{
+                  
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-top: 20px;
+                    height: 36px;
+                    .input-box{
+                    position: relative;
+                    width: 100%;
+                    height: 36px;
+                    border: 1px solid $nav-bgcolor;
+                    border-radius: 2px;
+                    input{
+                        width: 262px;
+                        height: 34px;
+                          padding: 7px 6px;
+                        vertical-align: top;
+                         font-size: 14px;
+                        line-height: 20px;
+                       color: #232628;
+                      
+                     
+                    }
+                
+                }
+                    }
+                .pwd-box{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-top: 20px;
+                    .input-box{
+                    position: relative;
+                    width: 100%;
+                    height: 36px;
+                    border: 1px solid $nav-bgcolor;
+                    border-radius: 2px;
+                        input{
+                            width: 262px;
+                            height: 34px;
+                              padding: 7px 6px;
+                            vertical-align: top;
+                             font-size: 14px;
+                            line-height: 20px;
+                           color: #232628;
+                         outline: none;
+                           border: 0;
+                        }
+
+                    }
+
+                    
+                }
+                .form-btn {
+                    margin-left: 10px;
+                    // margin-right: 10px;
+                  
+                        margin-top: 30px;
+                        background-color: $fontColor1;
+                        color: #fff;
+                        border: 0;
+                        width: 80%;
+                        height: 36px;
+                     
+                        border-radius: 24px;
+                        font-size: 16px;     
+                  
+                }
+                
+               }
+               .buttom-box{
+                   margin-top: 20px;
+                   margin-left:10px ;
+                   ul{
+                
+                    margin-top: 0px;
+                    padding: 0 8px;
+                    font-size: 0;
+                    // vertical-align:center;
+                    max-height: 100%;
+                    li {
+                        vertical-align:center;
+                        display: inline-block;
+                        margin: 0 16px;
+                        text-align: center;
+                        line-height: 52px;
+                        height: 52px;
+                        font-size: 12px;
+                        color: #71797F ;
+                        a{
+                            font-size: 12px;
+                            color: #71797F ;
+                            span{
+                                font-size: 12px;
+                                color: #71797F !important;    
+                        }
+                        }
+                    
+                    }
+                   }
+               
+               }
+                }
+                }
+            }
+            
+            }
+        
+    
+
+
+//中屏
+    @media (max-width:991px) and (min-width:768px) {
+        .site-nav{
+            background-color: $nav-bgcolor;
+             height: 35px;
+            .z-nav{
+                ul{
+                   margin-top: 4px;
+                   li{
+                       height: 35px;
+                       margin: 0;
+                      color: $fontColor;
+                      font-size: 14px;
+                      text-align: center;
+                      margin-right: 6px;
+                      a{
+                          text-decoration: none;
+                          color: $fontColor;
+                      }
+                      a:hover{
+                          color: $fontColor1;
+                      }
+                   }
+                }
+                .z-nav-first{
+                    .nav-weixin{
+                        position: relative;
+                        .weixin{
+                            width: 100px;
+                            height: 100px;
+                            position: absolute;
+                            top: 40px;
+                           left: 0;
+                            img{
+                         width: 80px;
+                     }
+                     div{
+                         font-size: 12px;
+                     }
+                 }
+                    }
+                    .nav-hualiwang{
+                        position: relative;
+                        .hualiwang{
+                            width: 100px;
+                            height: 100px;
+                            position: absolute;
+                            top: 40px;
+                           left: 0;
+                            img{
+                         width: 80px;
+                     }
+                     div{
+                         font-size: 12px;
+                     }
+                 }
+                    }
+                   
+                    
+                }
+                }
+             .z-nav-after{
+                 margin-top: 10px;
+                li:nth-child(1){
+                     margin-left:30px;
+                }
+                .nav-server{
+                 position: relative;
+                 ol{
+                     position: relative;
+                     top: 0px;
+                     li{
+                         margin:0;
+                         font-size: 10px;
+                     }
+                 }      
+                    
+                    }
+    
+                }
+               
+            
+    
+            }
+            .z-nav1{
+                margin-top:10px;
+               a{
+                   color: $fontColor;
+               }
+                a:hover{
+                  color: $fontColor1;
+               }
+               .z-nav-l{
+                   h2{
+                       color: $fontColor1;
+                   }
+               }
+               .z-nav-c{
+                  .search{
+                     width: 253px;
+                      border: 1px solid $fontColor1;
+                      border-right: none;
+                      box-sizing: border-box;
+                      margin-right: 0;
+                     input{
+                         border:none
+                      
+                     }
+                         button{
+                             width: 65px;
+                             height: 30px;
+                             background-color: $fontColor1;
+                             color: #fff;
+                             border-style: none; 
+                             margin: 0;  
+                         }
+                  }
+                  ul{
+                      li{
+                          font-size: 14px;
+                          margin-right: 3px;
+                      }
+                  }
+          
+               }
+               .z-nav-r{
+                   ul{
+                       text-align: center;
+                       li{
+                           margin-right: 5px;
+                       }
+                       
+                   }
+               }
+               
+           }
+        section{
+            .container{
+    
+                .login-box{
+                    position: absolute;
+                    top:60px;
+                    right: 220px;
+                 width: 360px;
+                 background-color: #fff;
+                border-radius: 5px;
+                    ul {
+                        margin-left: 10px;
+                        display: block;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        padding-inline-start: 40px;
+                        text-align:  center;
+                        li{
+                            margin-right: 15px;
+                            margin-top: 10px;
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: $fontColor1;
+                        }
+                    }
+                #form1{
+                    .tel-box{
+                        margin-top: 20px;
+                       margin-left: 10px;
+                       margin-right: 10px;
+                        height: 36px;
+                        .input-box{
+                        position: relative;
+                        width: 100%;
+                        height: 36px;
+                        border: 1px solid $nav-bgcolor;
+                        border-radius: 2px;
+                        input{
+                            width: 262px;
+                            height: 34px;
+                              padding: 7px 6px;
+                            vertical-align: top;
+                             font-size: 14px;
+                            line-height: 20px;
+                           color: #232628;
+                           outline: none;
+                           border: 0;
+                        }
+                    
+                        }
+                    }
+                    .code-box{
+                      
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 20px;
+                        height: 36px;
+                        .input-box{
+                        position: relative;
+                        width: 100%;
+                        height: 36px;
+                        border: 1px solid $nav-bgcolor;
+                        border-radius: 2px;
+                        input{
+                            width: 262px;
+                            height: 34px;
+                              padding: 7px 6px;
+                            vertical-align: top;
+                             font-size: 14px;
+                            line-height: 20px;
+                           color: #232628;
+                          
+                         
+                        }
+                    
+                    }
+                        }
+                    .pwd-box{
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 20px;
+                        .input-box{
+                        position: relative;
+                        width: 100%;
+                        height: 36px;
+                        border: 1px solid $nav-bgcolor;
+                        border-radius: 2px;
+                            input{
+                                width: 262px;
+                                height: 34px;
+                                  padding: 7px 6px;
+                                vertical-align: top;
+                                 font-size: 14px;
+                                line-height: 20px;
+                               color: #232628;
+                             outline: none;
+                               border: 0;
+                            }
+    
+                        }
+    
+                        
+                    }
+                    .form-btn {
+                        margin-left: 10px;
+                        // margin-right: 10px;
+                      
+                            margin-top: 30px;
+                            background-color: $fontColor1;
+                            color: #fff;
+                            border: 0;
+                            width: 80%;
+                            height: 36px;
+                         
+                            border-radius: 24px;
+                            font-size: 16px;     
+                      
+                    }
+                    
+                   }
+                   .buttom-box{
+                       margin-top: 20px;
+                       margin-left:10px ;
+                       ul{
+                    
+                        margin-top: 0px;
+                        padding: 0 8px;
+                        font-size: 0;
+                        // vertical-align:center;
+                        max-height: 100%;
+                        li {
+                            vertical-align:center;
+                            display: inline-block;
+                            margin: 0 16px;
+                            text-align: center;
+                            line-height: 52px;
+                            height: 52px;
+                            font-size: 12px;
+                            color: #71797F ;
+                            a{
+                                font-size: 12px;
+                                color: #71797F ;
+                                span{
+                                    font-size: 12px;
+                                    color: #71797F !important;    
+                            }
+                            }
+                        
+                        }
+                       }
+                   
+                   }
+                    }
+                    }
+                }
+                
+    }
+//小屏
+ @media (max-width:767px)  { 
+    .site-nav{
+        background-color: $nav-bgcolor;
+         height: 35px;
+        .z-nav{
+            ul{
+               margin-top: 4px;
+               li{
+                   height: 35px;
+                   margin: 0;
+                  color: $fontColor;
+                  font-size: 14px;
+                  text-align: center;
+                  margin-right: 6px;
+                  a{
+                      text-decoration: none;
+                      color: $fontColor;
+                  }
+                  a:hover{
+                      color: $fontColor1;
+                  }
+               }
+            }
+            .z-nav-first{
+                .nav-weixin{
+                    position: relative;
+                    .weixin{
+                        width: 100px;
+                        height: 100px;
+                        position: absolute;
+                        top: 40px;
+                       left: 0;
+                        img{
+                     width: 80px;
+                 }
+                 div{
+                     font-size: 12px;
+                 }
+             }
+                }
+                .nav-hualiwang{
+                    position: relative;
+                    .hualiwang{
+                        width: 100px;
+                        height: 100px;
+                        position: absolute;
+                        top: 40px;
+                       left: 0;
+                        img{
+                     width: 80px;
+                 }
+                 div{
+                     font-size: 12px;
+                 }
+             }
+                }
+               
+                
+            }
+            }
+         .z-nav-after{
+             margin-top: 10px;
+            li:nth-child(1){
+                 margin-left:30px;
+            }
+            .nav-server{
+             position: relative;
+             ol{
+                 position: relative;
+                 top: 0px;
+                 li{
+                     margin:0;
+                     font-size: 10px;
+                 }
+             }      
+                
+                }
+
+            }
+           
+        
+
+        }
+        .z-nav1{
+            margin-top:10px;
+           a{
+               color: $fontColor;
+           }
+            a:hover{
+              color: $fontColor1;
+           }
+           .z-nav-l{
+               h2{
+                   color: $fontColor1;
+               }
+           }
+           .z-nav-c{
+              .search{
+                 width: 253px;
+                  border: 1px solid $fontColor1;
+                  border-right: none;
+                  box-sizing: border-box;
+                  margin-right: 0;
+                 input{
+                     border:none
+                  
+                 }
+                     button{
+                         width: 65px;
+                         height: 30px;
+                         background-color: $fontColor1;
+                         color: #fff;
+                         border-style: none; 
+                         margin: 0;  
+                     }
+              }
+              ul{
+                  li{
+                      font-size: 14px;
+                      margin-right: 3px;
+                  }
+              }
+      
+           }
+           .z-nav-r{
+               ul{
+                   text-align: center;
+                   li{
+                       margin-right: 5px;
+                   }
+                   
+               }
+           }
+           
+       }
+    section{
+        .container{
+
+            .login-box{
+                position: absolute;
+                top:60px;
+                right: 220px;
+             width: 360px;
+             background-color: #fff;
+            border-radius: 5px;
+                ul {
+                    margin-left: 10px;
+                    display: block;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    padding-inline-start: 40px;
+                    text-align:  center;
+                    li{
+                        margin-right: 15px;
+                        margin-top: 10px;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: $fontColor1;
+                    }
+                }
+            #form1{
+                .tel-box{
+                    margin-top: 20px;
+                   margin-left: 10px;
+                   margin-right: 10px;
+                    height: 36px;
+                    .input-box{
+                    position: relative;
+                    width: 100%;
+                    height: 36px;
+                    border: 1px solid $nav-bgcolor;
+                    border-radius: 2px;
+                    input{
+                        width: 262px;
+                        height: 34px;
+                          padding: 7px 6px;
+                        vertical-align: top;
+                         font-size: 14px;
+                        line-height: 20px;
+                       color: #232628;
+                       outline: none;
+                       border: 0;
+                    }
+                
+                    }
+                }
+                .code-box{
+                  
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-top: 20px;
+                    height: 36px;
+                    .input-box{
+                    position: relative;
+                    width: 100%;
+                    height: 36px;
+                    border: 1px solid $nav-bgcolor;
+                    border-radius: 2px;
+                    input{
+                        width: 262px;
+                        height: 34px;
+                          padding: 7px 6px;
+                        vertical-align: top;
+                         font-size: 14px;
+                        line-height: 20px;
+                       color: #232628;
+                      
+                     
+                    }
+                
+                }
+                    }
+                .pwd-box{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-top: 20px;
+                    .input-box{
+                    position: relative;
+                    width: 100%;
+                    height: 36px;
+                    border: 1px solid $nav-bgcolor;
+                    border-radius: 2px;
+                        input{
+                            width: 262px;
+                            height: 34px;
+                              padding: 7px 6px;
+                            vertical-align: top;
+                             font-size: 14px;
+                            line-height: 20px;
+                           color: #232628;
+                         outline: none;
+                           border: 0;
+                        }
+
+                    }
+
+                    
+                }
+                .form-btn {
+                    margin-left: 10px;
+                    // margin-right: 10px;
+                  
+                        margin-top: 30px;
+                        background-color: $fontColor1;
+                        color: #fff;
+                        border: 0;
+                        width: 80%;
+                        height: 36px;
+                     
+                        border-radius: 24px;
+                        font-size: 16px;     
+                  
+                }
+                
+               }
+               .buttom-box{
+                   margin-top: 20px;
+                   margin-left:10px ;
+                   ul{
+                
+                    margin-top: 0px;
+                    padding: 0 8px;
+                    font-size: 0;
+                    // vertical-align:center;
+                    max-height: 100%;
+                    li {
+                        vertical-align:center;
+                        display: inline-block;
+                        margin: 0 16px;
+                        text-align: center;
+                        line-height: 52px;
+                        height: 52px;
+                        font-size: 12px;
+                        color: #71797F ;
+                        a{
+                            font-size: 12px;
+                            color: #71797F ;
+                            span{
+                                font-size: 12px;
+                                color: #71797F !important;    
+                        }
+                        }
+                    
+                    }
+                   }
+               
+               }
+                }
+                }
+            }
+            
+    }

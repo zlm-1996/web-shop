@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./scss/header.css">
+    <link rel="stylesheet" href="./scss/footer.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+      .ico-star{
+           display: inline-block;
+           width: 20px;
+           height: 20px;
+           background-color:#f2f2f2;
+           background-image: url(./img/header/common_z.png);
+           background-position: 0 -318px;
+           margin-left: 0;
+           margin-right: 3px;
+     } 
+     .ico-weixin{
+           display: inline-block;
+           width: 20px;
+           height: 20px;
+           background-color:#f2f2f2;
+           background-image: url(./img/header/common_z.png);
+           background-position: -374px -131px;
+           margin-left: 0;
+           margin-right: 3px;
+     } 
+     .ico-mobile{
+           display: inline-block;
+           width: 20px;
+           height: 20px;
+           background-color:#f2f2f2;
+           background-image: url(./img/header/common_z.png);
+           background-position: -294px -171px;
+           margin-left: 0;
+           margin-right: 3px;
+     } 
+     .ico-cart{
+           display: inline-block;
+           width: 20px;
+           height: 20px;
+           background-color:#f2f2f2;
+           background-image: url(./img/header/common_z.png);
+           background-position:-340px -284px;
+           margin-left: 0;
+           margin-right: 3px;
+     } 
+     .ico-phone{
+           display: inline-block;
+           width: 27px;
+           height: 27px;
+           background-color:#fff;
+           background-image: url(./img/header/common_z.png);
+           background-position:-380px -46px;
+           margin-left: 0;
+           margin-right: 3px;
+     } 
+     .ico-headset{
+           display: inline-block;
+           width: 27px;
+           height: 20px;
+           background-color:#fff;
+           background-image: url(./img/header/common_z.png);
+           background-position:-294px -131px;
+           margin-right: 3px;
+           margin-top: 3px;
+     } 
+     .ico-city{
+           display: inline-block;
+           width: 27px;
+           height: 40px;
+           background-color:#fff;
+           background-image: url(./img/header/common_z.png);
+           background-position:-150px -134px;
+           margin-right: 3px;
+           margin-top: 3px;
+     } 
+     .ico-brand{
+           display: inline-block;
+           width: 27px;
+           height: 40px;
+           background-color:#fff;
+           background-image: url(./img/header/common_z.png);
+           background-position:-244px -150px;
+           margin-right: 3px;
+           margin-top: 3px;
+     } 
+     .ico-fenlei{
+           display: inline-block;
+           width: 27px;
+           height: 40px;
+           background-color:#fff;
+           background-image: url(./img/header/common_z.png);
+           background-position:-80px -234px;
+           margin-right: 3px;
+           margin-top: 3px;
+     } 
+     .ico-heart{
+         background-image: url("./img/content/shoucang.png");
+     }
+     .ico-cart1{
+         background-image: url("img/content/shopcar.png");
+     }
+    </style>
+</head>
+
+<body>
+<div class="site-nav p-0">
+        <div class="container p-0">
+            <div class="row z-nav ">
+       <ul class="d-flex list-unstyled col-lg-12 col-md-12 col-sm-12 z-nav-first ">
+          <li ><a href="#"><span class="ico ico-star ml-0 mr-0"></span>收藏花礼网（hua.com)</a></li>
+          <li class="nav-weixin"><a href="#"><span class="ico ico-weixin"></span>关注微信</a>
+            <div class="weixin d-none">
+                <img src="./img/header/weixin-erweima.png" alt="" class="d-done md-d-done sm-d-done">
+                <div>扫码关注，回复“礼物”更多惊喜！</div>
+            </div>
+          </li>
+          <li class="nav-hualiwang"><span class="ico ico-mobile"></span><a href="#">花礼网app</a>
+            <div class="hualiwang d-none">
+                <img src="./img/header/app-erweima.png" alt="" class="d-none">
+                <div>新人专享100元app礼包</div>
+            </div>
+        
+         </li>
+          <li class="ml-lg-4"><a href="login.html">你好，请登录</a></li>
+             <li><a href="reg.html">注册</a></li>
+             <li>|</li>
+             <li><a href="#">订单查询</a></li>
+             <li>|</li>
+             <li><a href="#">我的花礼</a></li>
+             <li>|</li>
+             <li class="nav-server ><a href="#">客户服务</a>
+                <ol class="list-unstyled  server  d-none ">
+                   <li></li>
+                    <li>在线服务</li>
+                    <li>帮助中心</li>
+                    <li>售后服务</li>
+                    <li>配送范围</li>
+                    <li>留言反馈</li>
+                </ol>
+            </li>
+            <li>|</li>
+            <li><span class=" ico ico-cart"></span><a href="#">购物车</a></li>
+            <li>|</li>
+            <li><a href="#">幸福西饼蛋糕订购</a></li> 
+       </ul> 
+         
+        </div>
+    </div>
+</div>
+<div class="nav z-nav1 p-0">
+    <div class="container p-0">
+        <div class="row z-nav-l">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <h2>Hua.com花礼网</h2>
+            </div>
+            <div class="col-lg-4 col-lg-4 col-md-4 col-sm-6 z-nav-c ">
+    
+             <div class="search">
+                <input type="text" placeholder="商品关键词" >
+                <button>搜索</button>
+            </div>
+                <ul class="list-unstyled d-flex">
+                  <li><a href="#">元祖蛋糕</a></li>
+                  <li>|</li>
+                  <li><a href="#">幸福西饼蛋糕</a></li>
+                  <li>|</li>
+                  <li><a href="#">生日蛋糕</a></li>
+                </ul>
+           
+            </div>
+            <div class="col-lg-4 col-lg-4 col-md-4 col-sm-0 z-nav-r">
+                <ul class="list-unstyled d-flex">
+                    <li><span class="ico ico-phone"></span>400-889-8188</li>
+                    <li>|</li>
+                    <li><a href="#"><span class="ico ico-headset"></span>在线客服</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav z-nav2">
+    <div class="container p-0">
+        <div class="row col-12 z-nav-3">
+            <div class=" categorys dropdown  z-nav-3-first col-lg-2 col-md-2  ">
+                <h3 class="categorys-title" data-hover="dropdown" data-delay="0"><a href="#">全部商品导航</a></h3>
+                <div class="product-list dropdown-menu dropdown-cate">
+                    <h4>鲜花</h4>
+                    <ul class=" list-unstyled d-flex cate-list list-inline">
+                        <li class=""><a href="#">爱情鲜花</a></li>
+                        <li class=""><a href="#">生日鲜花</a></li>
+                        <li class=""><a href="#">友情鲜花</a></li>
+                        <li class=""><a href="#">问候长辈</a></li>
+                        <li class=""><a href="#">祝贺鲜花</a></li>
+                        <li class=""><a href="#">婚庆鲜花</a></li>
+                        <li class=""><a href="#">探病慰问</a></li>
+                        <li class=""><a href="#">道歉鲜花</a></li>
+                        <li class=""><a href="#">开业花篮</a></li>
+                     </ul>
+                     <hr>
+                     <h4>永生花</h4>
+                     <ul class=" list-unstyled d-flex cate-list list-inline">
+                         <li class=""><a href="#">经典花盒</a></li>
+                         <li class=""><a href="#">巨型玫瑰</a></li>n
+                         <li class=""><a href="#">薰衣草</a></li>
+                         <li class=""><a href="#">永生瓶花</a></li>
+                         <li class=""><a href="#">特色永生花</a></li>
+            
+                      </ul> 
+                      <hr>
+                      <h4>礼品</h4>
+                      <ul class=" list-unstyled d-flex cate-list list-inline">
+                          <li class=""><a href="#">泰国保鲜花</a></li>
+                          <li class=""><a href="#">音乐盒</a></li>n
+                          <li class=""><a href="#">水晶内雕</a></li>
+                          <li class=""><a href="#">金箔花</a></li>
+                          <li class=""><a href="#">化妆镜</a></li>
+                          <li class=""><a href="#">香薰系列</a></li>
+                          <li class=""><a href="#">音乐睡枕</a></li>
+                          <li class=""><a href="#">花瓶/相框</a></li>
+                          <li class=""><a href="#">卡通花束</a></li>
+                          <li class=""><a href="#">品牌公仔</a></li>
+                          <li class=""><a href="#">首饰</a></li>
+                          <li class=""><a href="#">Giftstalk精选</a></li>
+                          <li class=""><a href="#">创意部礼品</a></li>
+                          <li class=""><a href="#">礼品卡</a></li>
+                          <li class=""><a href="#">多肉植物盆栽</a></li>
+                       </ul> 
+                       <hr> 
+                       <h4>绿植</h4>
+                       <ul class=" list-unstyled d-flex cate-list list-inline">
+                         <li class=""><a href="#">绿色植物</a></li>
+                         <li class=""><a href="#">盆栽花卉</a></li>
+                      </ul> 
+                      <hr>
+                
+                </div>
+               
+                
+            </div>
+        <ul class="d-flex list-unstyled col-lg-10 col-md-10 col-sm-9 z-nav-3-after">
+            <li> <h3><a href="#">首页</a></h3></li>
+            <li class=""><h3><a href="#">鲜花</a></h3></li>
+            <li><h3><a href="#">永生花</a></h3></li>
+            <li><h3><a href="#">蛋糕</a></h3></li>
+            <li><h3><a href="#">礼品</a></h3></li>
+            <li><h3><a href="#">巧克力</a></h3></li>
+            <li><h3><a href="#">花语大全</a></h3></li>
+            <li><h3><a href="#">设计师臻选鲜花</a></h3></li>
+            <li><h3><a href="#">母亲节鲜花礼物</a></h3></li>
+        </ul>
+    </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container p-0">
+        <div class="row col-12">
+            <ul class=" list-unstyled d-flex ">
+                <li><a href="#">首页</a></li>
+                <li>></li>
+                <li><a href="#">蛋糕</a></li>
+                <li>></li>
+                <li><a href="#">幸福西饼蛋糕</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="content-left col-lg-2 col-md-2 col-sm-12 p-0">
+            <div class="left-1">
+               <table border="0">
+                   <tr>
+                       <td rowspan="7" >
+                           <div class="ico-city"></div>
+                           <h4>城市</h4>
+                       </td>
+                       <td>北京</td>
+                       <td>上海</td>
+                   </tr>
+                   <tr>
+                       <td>深圳</td>
+                       <td>广州</td>
+                   </tr>
+                   <tr>
+                    <td>天津</td>
+                    <td>重庆</td>
+                   </tr>
+                   <tr>
+                    <td>成都</td>
+                    <td>沈阳</td>
+                   </tr>
+                   <tr>
+                    <td>武汉</td>
+                    <td>西安</td>
+                   </tr>
+                   <tr>
+                    <td>杭州</td>
+                    <td>南京</td>
+                   </tr>
+                   <tr>
+                    <td>苏州</td>
+                    <td>更多>></td>
+                   </tr>
+               </table> 
+               <hr>
+               <table border="0">
+                <tr>
+                    <td rowspan="8" >
+                        <div class="ico-brand"></div>
+                        <h4>品牌</h4>
+                    </td>
+                    <td>元祖蛋糕</td>
+                    <td class="bl">廿一客蛋糕</td>
+                </tr>
+                <tr>
+                    <td>诺心蛋糕</td>
+                    <td class="bl">BONCAKE</td>
+                </tr>
+                <tr>
+                 <td>Mcake蛋糕</td>
+                 <td class="bl">窝夫小子</td>
+                </tr>
+                <tr>
+                 <td>米卡米卡</td>
+                 <td class="bl">幸福西饼</td>
+                </tr>
+                <tr>
+                 <td>Vcake蛋糕</td>
+                 <td class="bl">心之和蛋糕</td>
+                </tr>
+                <tr>
+                 <td>CAKEBOSS</td>
+                 <td class="bl">派悦坊</td>
+                </tr>
+                <tr>
+                 <td>黑池</td>
+                 <td class="bl">巴黎贝甜</td>
+                </tr>
+                <tr>
+                    <td>哈根达斯</td>
+                    <td class="bl">全国蛋糕</td>
+                   </tr>
+            </table> 
+            <hr>
+            <table border="0">
+                <tr>
+                    <td rowspan="6" >
+                        <div class="ico-fenlei"></div>
+                        <h4>分类</h4>
+                    </td>
+                    <td>鲜奶蛋糕</td>
+                    <td>水果蛋糕</td>
+                </tr>
+                <tr>
+                    <td>巧克力蛋糕</td>
+                    <td>慕斯蛋糕</td>
+                </tr>
+                <tr>
+                 <td>无糖蛋糕</td>
+                 <td>生肖蛋糕</td>
+                </tr>
+                <tr>
+                 <td>情人蛋糕</td>
+                 <td>婚庆蛋糕</td>
+                </tr>
+                <tr>
+                 <td>祝寿蛋糕</td>
+                 <td>儿童蛋糕</td>
+                </tr>
+                <tr>
+                 <td>欧式蛋糕</td>
+                 <td>节庆蛋糕</td>
+                </tr>
+            </table> 
+            </div>
+            <div class="left-2">
+               <div class="tuijian">热销蛋糕推荐</div> 
+               <div class="card">
+                   <img src="./img/content/left-1.jpg" alt="" class="card-img-top">
+                   <div class="card-body">
+                       <p><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                       <p class="price">￥228</p>
+                   </div>
+               </div>
+               <hr>
+               <div class="card">
+                <img src="./img/content/left-2.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <p><a href="#"> 蛋糕/花镜(12块)【无贺卡、巧克力牌、蜡烛、生日帽】-</a></p>
+                    <p class="price">￥179</p>
+                </div>
+            </div>
+            <hr>
+            <div class="card">
+                <img src="./img/content/left-3.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <p><a href="#">  蛋糕/榴芒双拼(约2磅)-双拼蛋糕</a></p>
+                    <p class="price">￥218</p>
+                </div>
+            </div>
+            <hr>
+            <div class="card">
+                <img src="./img/content/left-4.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <p><a href="#">  蛋糕/浪漫果纷蛋糕(约2磅)-水果蛋糕</a></p>
+                    <p class="price">￥228</p>
+                </div>
+            </div>
+            <hr>
+            <div class="card">
+                <img src="./img/content/left-5.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <p><a href="#">   蛋糕/全心全意(约2磅)-鲜果蛋糕</a></p>
+                    <p class="price">￥218</p>
+                </div>
+            </div>
+         
+            </div>
+            <div class="left-3">
+                <div class="pingjia">最新生日蛋糕评价</div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-4"><img src="./img/content/pingjia-1.jpg" alt="" class=""></div>
+                        <div class="col-8">
+                            <span class="zhanghao">账号:136****0066</span>
+                            <p><a href="#">服务好,速度快</a></p>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-4"><img src="./img/content/pingjia-2.jpg" alt="" class=""></div>
+                        <div class="col-8">
+                            <span class="zhanghao">账号:136****0066</span>
+                            <p><a href="#">服务好,速度快</a></p>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div class="col-4"><img src="./img/content/pingjia-3.jpg" alt="" class=""></div>
+                        <div class="col-8">
+                            <span class="zhanghao">账号:136****0066</span>
+                            <p><a href="#">服务好,速度快</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-4"><img src="./img/content/pingjia-4.jpg" alt="" class=""></div>
+                            <div class="col-8">
+                                <span class="zhanghao">账号:136****0066</span>
+                                <p><a href="#">服务好,速度快</a></p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-4"><img src="./img/content/pingjia-5.jpg" alt="" class=""></div>
+                            <div class="col-8">
+                                <span class="zhanghao">账号:136****0066</span>
+                                <p><a href="#">服务好,速度快</a></p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-4"><img src="./img/content/pingjia-6.jpg" alt="" class=""></div>
+                            <div class="col-8">
+                                <span class="zhanghao">账号:136****0066</span>
+                                <p><a href="#">服务好,速度快</a></p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right col-lg-9 col-md-9 col-sm-12 p-0">
+            <div class="right-1">
+                <div class="right-1-h">
+                    <strong>幸福西饼蛋糕</strong>
+                </div>
+                <div class="right-1-b">
+                    <div class="img d-inline-block"> 
+                         <img src="./img/content/logo.jpg" alt=""> 
+                    </div>
+                <div class="wenzi d-inline-block">
+                    <p class="">幸福西饼2008年创立于深圳，是集蛋糕、下午茶等烘焙食品的研发、 生产、销售于一体，始终坚持“新鲜好味，
+                        幸福心选”“百分百新鲜现做”的国内知名O2O电商蛋糕品牌。</p> 
+                          <span class="span1" >幸福西饼蛋糕配送城市：北京、上海、广州、深圳、天津、重庆、南京、长沙。</span>
+                          <span class="span2">市区免费配送，配送范围见商品详情。</span>
+                </div>
+
+                </div>
+            </div>
+           <div class="right-2">
+               <ul class="list-unstyled d-flex">
+                   <li class=""><a href="#">综合</a></li>
+                   <li><a href="#">销量</a></li>
+                   <li><a href="#">价格</a></li>
+                   <li><a href="#">最新</a></li>
+               </ul>
+           </div> 
+           <div class="right-3">
+               <div class="row">
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-4.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-5.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-7.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-8.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-9.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-10.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-11.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-12.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-13.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-14.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-15.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-16.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-4 col-sm-12">
+                    <img src="./img/content/right-17.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="dec"><a href="#"> 蛋糕/四重奏蛋糕(约2磅)-方形/巧克力/榴莲/慕斯蛋糕</a></p>
+                        <p class="price">￥228</p>
+                        <div class="jg">
+                            <a href="#"><span class="ico-heart d-inline-block"></span>收藏</a>
+                            <a href="#"><span class="ico-cart1 d-inline-block"></span>购物车</a>
+                        </div>
+                    </div>
+                </div>
+               </div>
+           
+
+               </div>
+            <div class="right-4 d-flex justify-content-between">
+                <div class="page-l">
+                 1/1共17件商品   
+                </div>
+                <div aria-label="Page navigation example page-r">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+                      <li class="page-item page-2"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+                    </ul>
+                </div>
+            </div>
+           </div>
+        </div>
+    <div class="changshi col-12 p-0">
+       <div class="changshi-1">
+           <p>幸福西饼蛋糕&蛋糕常识</p>  
+       </div>
+       <div class="changshi-2">
+               <ul class=" list-unstyled" >
+                 <li><a href="#">蛋糕的分类,做法和保存</a></li>
+                 <li><a href="#">蛋糕的起源</a></li>
+                 <li><a href="#">九种蛋糕的做法</a></li>
+                 <li><a href="#">美味蛋糕新做法</a></li>
+                 <li><a href="#">烘焙食品</a></li>
+               </ul>
+               <ul class=" list-unstyled" >
+                <li><a href="#">选择婚礼蛋糕的学问</a></li>
+                <li><a href="#">生活常识:巧切蛋糕</a></li>
+                <li><a href="#">微波炉蛋糕的做法</a></li>
+                <li><a href="#">风俗之结婚蛋糕</a></li>
+                <li><a href="#">诱人的圣诞节蛋糕</a></li>
+              </ul>
+              <ul class=" list-unstyled" >
+                <li><a href="#">纽约芝士蛋糕的配方与制作</a></li>
+                <li><a href="#">蓝莓慕斯蛋糕的制作方法</a></li>
+                <li><a href="#">巧克力慕斯蛋糕的制作方法</a></li>
+                <li><a href="#">蛋糕的价值</a></li>
+                <li><a href="#">DIY蛋糕方法</a></li>
+              </ul>
+               
+          
+       </div>
+    </div>
+    </div>
+        
+
+</div>
+<div class="container">
+    <div class="nav-footer row ">
+        <ul class="list-unstyled d-flex col-lg-12 col-md-12 col-sm-12">
+            <li class=""><a href="#">首页</a></li>
+            <li ><a href="#">|</a></li>
+            <li ><a href="#">关于我们</a></li>
+            <li ><a href="#">|</a></li>
+            <li ><a href="#">媒体报道</a></li>
+            <li ><a href="#">|</a></li>
+            <li ><a href="#">联系方式</a></li>
+            <li ><a href="#">|</a></li>
+            <li ><a href="#">企业团购</a></li>
+            <li ><a href="#">|</a></li>
+            <li ><a href="#">花店入驻</a></li>
+            <li ><a href="#">|</a></li>
+            <li ><a href="#">友情链接</a></li>
+            <li ><a href="#">|</a></li>
+            <li ><a href="#">在线补款</a></li>
+            <li ><a href="#">|</a></li>
+            <li ><a href="#">为什么选择中国鲜花礼品网</a></li>
+        </ul>
+    </div>
+ <footer>
+     <div class="row col-lg-12 col-md-12 col-sm-12 z-foot-img ">
+         <img src="./img/footer/slogan.png" alt="" class="mr-4">
+         <img src="./img/footer/buy.jpg" alt="" class="mr-4">
+         <img src="./img/footer/guohui.jpg" alt="" class="mr-4">
+         <img src="./img/footer/govIcon.gif" alt="" class="mr-4">
+     </div>
+     <div class="row col-lg-12 col-md-12 col-sm-12 z-foot-copyright mt-3 ">
+         <ul class="list-unstyled d-flex">
+             <li class=""><a href="#">中国花卉协会会员</a></li>
+             <li class=""><a href="#">中国电子商务协会会员</a></li>
+             <li class="">ICP经营许可证：<a href="#">粤B2-20050744</a></li>
+             <li class="">|<a href="#"></a></li>
+             <li class=""><a href="#">粤ICP备09171662号</a></li>
+             <li class="">粤公网安备44030502000373号<a href="#"></a></li>
+             <li class="">Copyright@2005-2021<a href="#"></a></li>
+         </ul>
+     </div>
+     <div class="row col-lg-12 col-md-12 col-sm-12 z-foot-desc  ">
+       <ul class="d-flex list-unstyled ">
+        <li class="">花礼网</li>
+        <li class="">（中国鲜花礼品网）</a></li>
+        <li class=""><a href="#">www.hua.com</a></li>
+        <li class="">深圳市百易信息技术有限公司</li>
+        <li class="">中国领先网上蛋糕店-幸福西饼</li>
+       </ul>
+     </div>
+ </footer>
+</div>
+</body>
+</html>

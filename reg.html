@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./scss/footer.css">
+    <link rel="stylesheet" href="./scss/header.css">
+    <link rel="stylesheet" href="./scss/reg.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+     
+        .ico-star{
+             display: inline-block;
+             width: 20px;
+             height: 20px;
+             background-color:#f2f2f2;
+             background-image: url(./img/header/common_z.png);
+             background-position: 0 -318px;
+             margin-left: 0;
+             margin-right: 3px;
+       } 
+       .ico-weixin{
+             display: inline-block;
+             width: 20px;
+             height: 20px;
+             background-color:#f2f2f2;
+             background-image: url(./img/header/common_z.png);
+             background-position: -374px -131px;
+             margin-left: 0;
+             margin-right: 3px;
+       } 
+       .ico-mobile{
+             display: inline-block;
+             width: 20px;
+             height: 20px;
+             background-color:#f2f2f2;
+             background-image: url(./img/header/common_z.png);
+             background-position: -294px -171px;
+             margin-left: 0;
+             margin-right: 3px;
+       } 
+       .ico-cart{
+             display: inline-block;
+             width: 20px;
+             height: 20px;
+             background-color:#f2f2f2;
+             background-image: url(./img/header/common_z.png);
+             background-position:-340px -284px;
+             margin-left: 0;
+             margin-right: 3px;
+       } 
+       .ico-phone{
+             display: inline-block;
+             width: 27px;
+             height: 27px;
+             background-color:#fff;
+             background-image: url(./img/header/common_z.png);
+             background-position:-380px -46px;
+             margin-left: 0;
+             margin-right: 3px;
+       } 
+       .ico-headset{
+             display: inline-block;
+             width: 27px;
+             height: 20px;
+             background-color:#fff;
+             background-image: url(./img/header/common_z.png);
+             background-position:-294px -131px;
+             margin-right: 3px;
+             margin-top: 3px;
+       } 
+       .ico-city{
+             display: inline-block;
+             width: 27px;
+             height: 40px;
+             background-color:#fff;
+             background-image: url(./img/header/common_z.png);
+             background-position:-150px -134px;
+             margin-right: 3px;
+             margin-top: 3px;
+       } 
+       .ico-brand{
+             display: inline-block;
+             width: 27px;
+             height: 40px;
+             background-color:#fff;
+             background-image: url(./img/header/common_z.png);
+             background-position:-244px -150px;
+             margin-right: 3px;
+             margin-top: 3px;
+       } 
+       .ico-fenlei{
+             display: inline-block;
+             width: 27px;
+             height: 40px;
+             background-color:#fff;
+             background-image: url(./img/header/common_z.png);
+             background-position:-80px -234px;
+             margin-right: 3px;
+             margin-top: 3px;
+       } 
+       .ico-heart{
+           background-image: url("./img/content/shoucang.png");
+       }
+       .ico-cart1{
+           background-image: url("img/content/shopcar.png");
+       }
+     
+      section{
+          background-image: url("img/login-bgimg/login_bg.jpg");
+          width: 100%;
+          height: 474px;
+          background-size: cover;
+          background-position: 50% 0;
+          background-repeat: no-repeat;
+          position: relative;
+      }
+      .ico-phone1{
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      background-image: url("./img/login-bgimg/pc_icon.png");
+      background-repeat: no-repeat;
+      background-position: -88px -24px
+      }
+      .icon-message{
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      background-image: url("./img/login-bgimg/pc_icon.png");
+      background-repeat: no-repeat;
+      background-position: 0 -24px;
+      }
+      .icon-unlocked{
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      background-image: url("./img/login-bgimg/pc_icon.png");
+      background-repeat: no-repeat;
+      background-position: -44px -24px;
+      }
+      .icon-QQ{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-top: 12px;
+      margin-right: 6px;
+      margin-left: 10px;
+      background-image: url("./img/login-bgimg/pc_icon.png");
+      background-repeat: no-repeat;
+      vertical-align: top;
+      background-position: -30px -94px;
+  }
+  .icon-zhifubao{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-top: 12px;
+      margin-left: 10px;
+      margin-right: 6px;
+      background-image: url("./img/login-bgimg/pc_icon.png");
+      background-repeat: no-repeat;
+      vertical-align: top;
+      background-position: -60px -94px;
+  }
+  
+  .icon-arrow-right-active{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-top: 10px;
+      margin-left: 6px;
+      
+      background-image: url("./img/login-bgimg/pc_icon.png");
+      background-repeat: no-repeat;
+      vertical-align: top;
+      background-position: 0 -66px;
+  }
+      
+</style>
+</head>
+<body>
+    <div class="site-nav p-0">
+        <div class="container p-0">
+            <div class="row z-nav ">
+       <ul class="d-flex list-unstyled col-lg-12 col-md-12 col-sm-12 z-nav-first ">
+          <li ><a href="#"><span class="ico ico-star ml-0 mr-0"></span>收藏花礼网（hua.com)</a></li>
+          <li class="nav-weixin"><a href="#"><span class="ico ico-weixin"></span>关注微信</a>
+            <div class="weixin d-none">
+                <img src="./img/header/weixin-erweima.png" alt="" class="d-done md-d-done sm-d-done">
+                <div>扫码关注，回复“礼物”更多惊喜！</div>
+            </div>
+          </li>
+          <li class="nav-hualiwang"><span class="ico ico-mobile"></span><a href="#">花礼网app</a>
+            <div class="hualiwang d-none">
+                <img src="./img/header/app-erweima.png" alt="" class="d-none">
+                <div>新人专享100元app礼包</div>
+            </div>
+        
+         </li>
+          <li class="ml-lg-4"><a href="login.html">你好，请登录</a></li>
+             <li><a href="#">注册</a></li>
+             <li>|</li>
+             <li><a href="#">订单查询</a></li>
+             <li>|</li>
+             <li><a href="#">我的花礼</a></li>
+             <li>|</li>
+             <li class="nav-server"><a href="#">客户服务</a>
+                <ol class="list-unstyled  server d-none">
+                   <li></li>
+                    <li>在线服务</li>
+                    <li>帮助中心</li>
+                    <li>售后服务</li>
+                    <li>配送范围</li>
+                    <li>留言反馈</li>
+                </ol>
+            </li>
+            <li>|</li>
+            <li><span class=" ico ico-cart"></span><a href="#">购物车</a></li>
+            <li>|</li>
+            <li><a href="#">幸福西饼蛋糕订购</a></li> 
+       </ul> 
+          <!-- <ul class="d-flex list-unstyled col-lg-7 col-md-12 col-sm-12 z-nav-after">
+             <li class="ml-3"><a href="#">你好，请登录</a></li>
+             <li><a href="#">注册</a></li>
+             <li>|</li>
+             <li><a href="#">订单查询</a></li>
+             <li>|</li>
+             <li><a href="#">我的花礼</a></li>
+             <li>|</li>
+             <li class="nav-server"><a href="#">客户服务</a>
+                <ol class="list-unstyled  server d-none">
+                   <li></li>
+                    <li>在线服务</li>
+                    <li>帮助中心</li>
+                    <li>售后服务</li>
+                    <li>配送范围</li>
+                    <li>留言反馈</li>
+                </ol>
+            </li>
+            <li>|</li>
+            <li><span class=" ico ico-cart"></span><a href="#">购物车</a></li>
+            <li>|</li>
+            <li><a href="#">幸福西饼蛋糕订购</a></li>
+         </ul>  -->
+        </div>
+    </div>
+</div>
+<div class="nav z-nav1 p-0">
+    <div class="container p-0">
+        <div class="row z-nav-l">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <h2>Hua.com花礼网</h2>
+            </div>
+            <div class="col-lg-4 col-lg-4 col-md-4 col-sm-6 z-nav-c ">
+    
+             <div class="search">
+                <input type="text" placeholder="商品关键词" >
+                <button>搜索</button>
+            </div>
+                <ul class="list-unstyled d-flex">
+                  <li><a href="#">元祖蛋糕</a></li>
+                  <li>|</li>
+                  <li><a href="#">幸福西饼蛋糕</a></li>
+                  <li>|</li>
+                  <li><a href="#">生日蛋糕</a></li>
+                </ul>
+           
+            </div>
+            <div class="col-lg-4 col-lg-4 col-md-4 col-sm-0 z-nav-r">
+                <ul class="list-unstyled d-flex">
+                    <li><span class="ico ico-phone"></span>400-889-8188</li>
+                    <li>|</li>
+                    <li><a href="#"><span class="ico ico-headset"></span>在线客服</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="login-wrapper">i
+        <div class="container">
+         <div class="login-box">
+            <ul class="login-tabs list-unstyled d-flex justify-content-between">
+                <li class="register-byphone active">手机账号</li>
+                <li class="register-bymail">邮箱账号注册</li>
+            </ul> 
+           
+            <div id="form1">
+                <div class="tel-box">
+                    <div class="input-box">
+                        <span class="ico-phone1"></span>
+                        <input id="phone" name="phone" class="account" type="text" placeholder="请输入手机">
+                    </div>
+
+                </div>
+                <div class="code-box">
+                    <div class="input-box">
+                        <span class="icon-message"></span>
+                        <input id="phoneCode" name="phoneCode" class="pwd" type="text" autocomplete="off" placeholder="请输入短信验证码">
+                        <span id="getcode" class="get-code">获取验证码</span>
+            </div>
+         </div>
+         <div class="pwd-box pwd-box1">
+            <div class="input-box">
+                <span class="icon icon-unlocked"></span>
+                <input id="phonePassWord" name="phonePassWord" class="pwd pwd-input" type="text" placeholder="请输入密码" onfocus="this.type='password'" autocomplete="off">
+            </div>
+          
+        </div>
+        <button class="form-btn login-btn" type="button" value="注册" onclick="phoneRegister();">注册</button>
+        </div>
+        <div class="bottom-box">
+            <ul class="other-login-ways list-unstyled d-flex ">
+                <li class="login-way login-qq"><a href="#" style="font-size: 12px; color: #71797F"><i class="icon icon-QQ"></i><span>QQ</span></a></li>
+                <li class="login-way login-ali"><a href="#" style="font-size: 12px; color: #71797F"><i class="icon icon-zhifubao"></i><span>支付宝</span></a></li>
+                <li class="extra-r ml-4"><a href="#" style="font-size: 12px; color:#fe7a24;">登录账号<i class="icon icon-arrow-right-active"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+        <div class="nav-footer row ">
+            <ul class="list-unstyled d-flex col-lg-12 col-md-12 col-sm-12">
+                <li class=""><a href="header.html">首页</a></li>
+                <li ><a href="#">|</a></li>
+                <li ><a href="#">关于我们</a></li>
+                <li ><a href="#">|</a></li>
+                <li ><a href="#">媒体报道</a></li>
+                <li ><a href="#">|</a></li>
+                <li ><a href="#">联系方式</a></li>
+                <li ><a href="#">|</a></li>
+                <li ><a href="#">企业团购</a></li>
+                <li ><a href="#">|</a></li>
+                <li ><a href="#">花店入驻</a></li>
+                <li ><a href="#">|</a></li>
+                <li ><a href="#">友情链接</a></li>
+                <li ><a href="#">|</a></li>
+                <li ><a href="#">在线补款</a></li>
+                <li ><a href="#">|</a></li>
+                <li ><a href="#">为什么选择中国鲜花礼品网</a></li>
+            </ul>
+        </div>
+     <footer>
+         <div class="row col-lg-12 col-md-12 col-sm-12 z-foot-img ">
+             <img src="./img/footer/slogan.png" alt="" class="mr-4">
+             <img src="./img/footer/buy.jpg" alt="" class="mr-4">
+             <img src="./img/footer/guohui.jpg" alt="" class="mr-4">
+             <img src="./img/footer/govIcon.gif" alt="" class="mr-4">
+         </div>
+         <div class="row col-lg-12 col-md-12 col-sm-12 z-foot-copyright mt-3 ">
+             <ul class="list-unstyled d-flex">
+                 <li class=""><a href="#">中国花卉协会会员</a></li>
+                 <li class=""><a href="#">中国电子商务协会会员</a></li>
+                 <li class="">ICP经营许可证：<a href="#">粤B2-20050744</a></li>
+                 <li class="">|<a href="#"></a></li>
+                 <li class=""><a href="#">粤ICP备09171662号</a></li>
+                 <li class="">粤公网安备44030502000373号<a href="#"></a></li>
+                 <li class="">Copyright@2005-2021<a href="#"></a></li>
+             </ul>
+         </div>
+         <div class="row col-lg-12 col-md-12 col-sm-12 z-foot-desc  ">
+           <ul class="d-flex list-unstyled ">
+            <li class="">花礼网</li>
+            <li class="">（中国鲜花礼品网）</a></li>
+            <li class=""><a href="#">www.hua.com</a></li>
+            <li class="">深圳市百易信息技术有限公司</li>
+            <li class="">中国领先网上蛋糕店-幸福西饼</li>
+           </ul>
+         </div>
+     </footer>
+    </div>
+</body>
+</html>

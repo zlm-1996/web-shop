@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "./color.scss";
+$nav-bgcolor:$lightGray;
+$fontColor:$darkGray;
+$fontColor1:$orange;
+//大屏
+@media (min-width:992px){
+.content{
+    .row{
+        ul{
+            display: flex;
+           
+            li{
+                color: $fontColor;
+                a{
+                    color: $fontColor !important;
+                }
+            }
+        }
+    }
+}
+}
+//中屏
+    @media (max-width:991px) and (min-width:768px) {
+
+    }
+//小屏
+@media (max-width:767px)  { }
